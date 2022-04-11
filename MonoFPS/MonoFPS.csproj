@@ -23,4 +23,9 @@
   <ItemGroup>
     <ProjectReference Include="..\HonasGame\HonasGame\HonasGame.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="Content\rooms\room_0_0.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

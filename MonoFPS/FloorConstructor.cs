@@ -11,7 +11,13 @@ namespace MonoFPS
         public static void InitializeFloor(float width, float length, GraphicsDevice gd, out VertexBuffer vbo, out IndexBuffer ibo)
         {
             InitializeVertices(width, length, gd, out vbo);
-            InitializeIBO(gd, out ibo);
+            InitializeIBO(gd, false, out ibo);
+        }
+
+        public static void InitializeCeiling(float width, float length, GraphicsDevice gd, out VertexBuffer vbo, out IndexBuffer ibo)
+        {
+            InitializeVertices(width, length, gd, out vbo);
+            InitializeIBO(gd, true, out ibo);
         }
 
         private static void InitializeVertices(float width, float length, GraphicsDevice gd, out VertexBuffer vbo)
@@ -27,14 +33,25 @@ namespace MonoFPS
             vbo.SetData<VertexPositionNormalTexture>(vertexData);
         }
 
-        private static void InitializeIBO(GraphicsDevice gd, out IndexBuffer ibo)
+        private static void InitializeIBO(GraphicsDevice gd, bool isCeiling, out IndexBuffer ibo)
         {
             var indexData = new short[]
-        {
-            // Face
-            0, 1, 2,
-            0, 2, 3,
-        };
+            {
+                // Face
+                0, 1, 2,
+                0, 2, 3,
+            };
+
+            if(isCeiling)
+            {
+                indexData = new short[]
+                {
+                    // Face
+                    0, 2, 1,
+                    0, 3, 2,
+                };
+            }
+
             ibo = new IndexBuffer(gd, IndexElementSize.SixteenBits, indexData.Length, BufferUsage.None);
             ibo.SetData<short>(indexData);
         }

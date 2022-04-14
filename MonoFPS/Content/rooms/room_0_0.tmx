@@ -1,15 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="16">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="90">
  <editorsettings>
   <export target="room_0_0.json" format="json"/>
  </editorsettings>
- <objectgroup id="3" name="Floor"/>
+ <objectgroup id="3" name="Floor" locked="1">
+  <object id="32" template="templates/floor.tx" x="1376" y="1920" width="544" height="672"/>
+  <object id="34" template="templates/wall.tx" x="1696" y="2112" width="32" height="96"/>
+  <object id="35" template="templates/wall.tx" x="1472" y="2080" width="224" height="32"/>
+  <object id="36" template="templates/enemy.tx" x="1408" y="2144"/>
+  <object id="41" template="templates/floor.tx" x="1920" y="1984" width="224" height="640"/>
+  <object id="42" template="templates/enemy.tx" x="1856" y="2080"/>
+  <object id="43" template="templates/enemy.tx" x="2048" y="2080"/>
+  <object id="45" template="templates/wall.tx" x="2144" y="2336" width="64" height="32"/>
+  <object id="48" template="templates/wall.tx" x="2208" y="2368" width="64" height="32"/>
+  <object id="49" template="templates/wall.tx" x="2272" y="2400" width="64" height="32"/>
+  <object id="50" template="templates/wall.tx" x="2272" y="2560" width="64" height="32"/>
+  <object id="51" template="templates/wall.tx" x="2208" y="2528" width="64" height="32"/>
+  <object id="52" template="templates/wall.tx" x="1952" y="2496" width="256" height="32"/>
+  <object id="59" template="templates/floor.tx" x="2144" y="2368" width="192" height="224"/>
+  <object id="72" template="templates/floor.tx" x="2336" y="2272" width="448" height="480"/>
+  <object id="82" template="templates/floor.tx" x="2688" y="2176" width="160" height="128"/>
+ </objectgroup>
  <objectgroup id="2" name="Object Layer 1">
-  <object id="4" template="templates/player.tx" x="480" y="800"/>
-  <object id="8" template="templates/wall.tx" x="320" y="672" width="128" height="32"/>
-  <object id="9" template="templates/wall.tx" x="544" y="640" width="192" height="64"/>
-  <object id="10" template="templates/wall.tx" x="384" y="576"/>
-  <object id="11" template="templates/wall.tx" x="608" y="576"/>
-  <object id="15" type="Floor" x="320" y="512" width="416" height="352"/>
+  <object id="26" template="templates/wall.tx" x="1344" y="2592" width="608" height="32"/>
+  <object id="27" template="templates/wall.tx" x="1344" y="1984" width="32" height="608"/>
+  <object id="28" template="templates/wall.tx" x="1920" y="2208" width="32" height="384"/>
+  <object id="29" template="templates/wall.tx" x="1696" y="2208" width="224" height="32"/>
+  <object id="30" template="templates/wall.tx" x="1376" y="2208" width="224" height="32"/>
+  <object id="38" template="templates/wall.tx" x="1344" y="1952" width="832" height="32"/>
+  <object id="39" template="templates/wall.tx" x="2144" y="1984" width="32" height="352"/>
+  <object id="40" template="templates/wall.tx" x="1920" y="2048" width="64" height="96"/>
+  <object id="62" template="templates/wall.tx" x="2464" y="2496"/>
+  <object id="63" template="templates/wall.tx" x="2560" y="2432"/>
+  <object id="64" template="templates/wall.tx" x="2464" y="2336"/>
+  <object id="65" template="templates/wall.tx" x="2624" y="2624"/>
+  <object id="66" template="templates/wall.tx" x="2336" y="2592" width="32" height="128"/>
+  <object id="67" template="templates/wall.tx" x="2368" y="2720" width="384" height="32"/>
+  <object id="68" template="templates/wall.tx" x="2752" y="2336" width="32" height="384"/>
+  <object id="69" template="templates/wall.tx" x="2336" y="2272" width="32" height="128"/>
+  <object id="70" template="templates/wall.tx" x="2368" y="2240" width="416" height="32"/>
+  <object id="74" type="Fall" x="2656" y="2208" width="32" height="32"/>
+  <object id="75" template="templates/player.tx" x="1632" y="2400"/>
+  <object id="76" template="templates/wall.tx" x="2784" y="2304" width="64" height="32"/>
+  <object id="77" template="templates/wall.tx" x="2848" y="2176" width="32" height="128"/>
+  <object id="78" template="templates/wall.tx" x="2784" y="2144" width="64" height="32"/>
+  <object id="79" template="templates/wall.tx" x="2752" y="2144"/>
+  <object id="80" template="templates/wall.tx" x="2720" y="2144"/>
+  <object id="81" template="templates/wall.tx" x="2688" y="2176"/>
+  <object id="85" type="Menu" x="1280" y="2464" width="32" height="32"/>
+  <object id="86" template="templates/enemy.tx" x="2528" y="2560"/>
+  <object id="87" template="templates/enemy.tx" x="2528" y="2304"/>
+  <object id="88" template="templates/enemy.tx" x="2688" y="2432"/>
+  <object id="89" template="templates/enemy.tx" x="2432" y="2656"/>
+ </objectgroup>
+ <objectgroup id="4" name="Ceiling" locked="1">
+  <object id="54" template="templates/ceiling.tx" x="1376" y="1984" width="544" height="608"/>
+  <object id="56" template="templates/ceiling.tx" x="1920" y="1984" width="224" height="640"/>
+  <object id="73" template="templates/ceiling.tx" x="2144" y="2240" width="640" height="512"/>
+  <object id="84" template="templates/ceiling.tx" x="2688" y="2176" width="160" height="128"/>
  </objectgroup>
 </map>

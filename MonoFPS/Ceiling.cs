@@ -9,7 +9,7 @@ using System.Text;
 
 namespace MonoFPS
 {
-    public class Floor : Entity
+    public class Ceiling : Entity
     {
         private IndexBuffer _ibo;
         private VertexBuffer _vbo;
@@ -18,12 +18,12 @@ namespace MonoFPS
         private Vector3 _position;
         private Vector3 _scale;
 
-        public Floor(Vector3 position, float width, float length, GraphicsDevice gd)
+        public Ceiling(Vector3 position, float width, float length, GraphicsDevice gd)
         {
-            FloorConstructor.InitializeFloor(width, length, gd, out _vbo, out _ibo);
+            FloorConstructor.InitializeCeiling(width, length, gd, out _vbo, out _ibo);
             _gd = gd;
             _position = position * Globals.WORLD_SCALE;
-            _scale = new Vector3(width * Globals.WORLD_SCALE, 2 * Globals.WORLD_SCALE, length * Globals.WORLD_SCALE);
+            _scale = new Vector3(width * Globals.WORLD_SCALE, 1 * Globals.WORLD_SCALE, length * Globals.WORLD_SCALE);
 
             InitializeEffect();
         }
@@ -35,7 +35,7 @@ namespace MonoFPS
             _effect.View = Camera3D.View;
             _effect.Projection = Camera3D.Projection;
             _effect.TextureEnabled = true;
-            _effect.Texture = AssetLibrary.GetAsset<Texture2D>("floor");
+            _effect.Texture = AssetLibrary.GetAsset<Texture2D>("ceiling");
         }
 
         public override void Draw3D(GameTime gameTime, SpriteBatch spriteBatch)

@@ -9,5 +9,7 @@ namespace MonoFPS
         public const float WORLD_SCALE = 100;
 
         public const uint TAG_SOLID = 1;
+        public const uint TAG_ENEMY = 2;
+        public const uint TAG_FALL = 4;
     }
 }

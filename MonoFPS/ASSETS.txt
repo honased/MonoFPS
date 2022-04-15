@@ -1,0 +1,15 @@
+Content/textures/ceiling.png - created by Eric Honas for this game, released under public domain
+
+Content/textures/crate0.png - created by Eric Honas for this game, released under public domain
+
+Content/textures/enemy.png - created by Eric Honas for this game, released under public domain
+
+Content/Sprites/Asteroid.png - created by Eric Honas for this game, released under public domain
+
+Content/textures/floor.png - created by Eric Honas for this game, released under public domain
+
+Content/textures/hand.png - created by Eric Honas for this game, released under public domain
+
+Content/textures/projectile.png - created by Eric Honas for this game, released under public domain
+
+Content/PX Garamond/PX Garamond Regular.ttf - PX Garamond Regular font created by Tristan Dannenberg, released on Github (https://github.com/teryror/pixel-fonts) under the Open Font License

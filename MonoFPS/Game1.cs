@@ -41,7 +41,6 @@ namespace MonoFPS
             // TODO: use this.Content to load your game content here
             GraphicsDevice.SamplerStates[0] = SamplerState.PointWrap;
 
-            AssetLibrary.AddAsset("rifle", Content.Load<Model>("models/Rifle1"));
             AssetLibrary.AddAsset("crate0", Content.Load<Texture2D>("textures/crate0"));
             AssetLibrary.AddAsset("floor", Content.Load<Texture2D>("textures/floor"));
             AssetLibrary.AddAsset("ceiling", Content.Load<Texture2D>("textures/ceiling"));
